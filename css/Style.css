@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+:root {
+  --color-general: #66615b;
+  --color-titulos: #111111;
+  --color-iconos: #888888;
+  --color-footer-bg: #252422;
+  --color-footer-text: #ffffff;
+  --color-fondo-azul: #f5fafd;
+
+  --font-content: 'Roboto', sans-serif;
+  --font-title: 'Dosis', sans-serif;
+}
+
+body {
+  font-family: var(--font-content);
+  color: var(--color-general);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3, h5 {
+  font-family: var(--font-title);
+  color: var(--color-titulos);
+}
+
+.hero {
+  background-image:url("../img/bg-site.jpeg");
+  padding: 80px 0;
+  color: white;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+	color: #FFFFFF;
+}
+
+.hero-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.hero-list li::before {
+  content: '\2713';
+  margin-right: 8px;
+  color: #fff;
+}
+
+.features h5 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.features p {
+  font-size: 0.95rem;
+}
+
+.about ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about ul li::before {
+  content: '\2022';
+  color: var(--color-general);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.testimonials blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid var(--color-iconos);
+  margin: 1em 0;
+  padding: 1em;
+  font-style: italic;
+}
+
+footer {
+  background-color: var(--color-footer-bg);
+  color: var(--color-footer-text);
+  font-size: 0.9rem;
+}
+
+.btn-outline-dark {
+  border-radius: 25px;
+}
+
+.download h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.carousel-inner img {
+  max-height: 300px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+}
+.download {
+  background-image:url("../img/bg-site.jpeg");
+}
+.imgF{
+	border-radius: 50%;
+}
+.btn-light {
+  background-color: white;
+  color: #111111;
+  border-radius: 8px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.03);
+}
+.mb-4{
+color: #FFFFFF	
+}
+.text-icon {
+  color: #888888; /* Color de los iconos */
+  font-size: 1.2rem;
+}
+
+.feature-item h5 {
+  font-weight: 600;
+  font-family: 'Dosis', sans-serif;
+  color: #111111; /* Color del título */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feature-item p {
+  font-family: 'Roboto', sans-serif;
+  color: #66615b; /* Color general del texto */
+  margin-top: 0.5rem;
+}
+.fas {
+  color: #f5593d;
+}
+.fab {
+  color: #888;
+}
